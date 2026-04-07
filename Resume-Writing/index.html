@@ -5,26 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harvie H. Mamaril - Resume</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 20px; }
-        .profile-img { border-radius: 8px; border: 1px solid #ccc; float: right; }
-        h2 { border-bottom: 2px solid #333; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            max-width: 850px; 
+            margin: 20px auto; 
+            padding: 40px; 
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .resume-container {
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-top: 10px solid #2c3e50;
+        }
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .profile-img { 
+            border-radius: 4px; 
+            border: 1px solid #ccc; 
+            width: 130px; /* Controlled width */
+            height: auto;
+            object-fit: cover;
+        }
+        .contact-info { 
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+        h2 { margin: 0; color: #2c3e50; font-size: 2em; }
+        h4 { 
+            color: #2c3e50; 
+            border-left: 5px solid #2c3e50; 
+            padding-left: 10px; 
+            margin-top: 25px;
+            text-transform: uppercase;
+            font-size: 1.1em;
+        }
         table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f4f4f4; }
-        .contact-info { margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 0.9em; }
+        th { background-color: #f8f9fa; }
+        ul { padding-left: 20px; }
+        .certify { font-style: italic; margin-top: 30px; font-size: 0.85em; color: #666; }
     </style>
 </head>
 <body>
 
-    <img src="Profiles.png" class="profile-img" alt="Harvie Mamaril">
-
-    <h2>MAMARIL, HARVIE H.</h2>
-
-    <div class="contact-info">
-        <strong>Email:</strong> <a href="mailto:harviemamaril@gmail.com">harviemamaril@gmail.com</a><br>
-        <strong>Phone:</strong> 0916 178 1041<br>
-        <strong>Address:</strong> Sta. Lucia Resettlement, Magalang, Pampanga<br>
-        <strong>LinkedIn:</strong> <a href="#">linkedin.com/in/harviemamaril</a>
+<div class="resume-container">
+    <div class="header-section">
+        <div>
+            <h2>MAMARIL, HARVIE H.</h2>
+            <div class="contact-info">
+                <strong>Email:</strong> <a href="mailto:harviemamaril@gmail.com">harviemamaril@gmail.com</a><br>
+                <strong>Phone:</strong> 0916 178 1041<br>
+                <strong>Address:</strong> Sta. Lucia Resettlement, Magalang, Pampanga<br>
+                <strong>LinkedIn:</strong> <a href="#">linkedin.com/in/harviemamaril</a>
+            </div>
+        </div>
+        <img src="Profiles.png" class="profile-img" alt="Harvie Mamaril">
     </div>
 
     <h4>Career Objective</h4>
@@ -43,8 +87,8 @@
     </ul>
 
     <h4>Work Experience</h4>
-    <h5>IT Support Intern</h5>
-    <p><strong>Pampanga State Agricultural University</strong> | Jan 2025 – Present</p>
+    <p><strong>IT Support Intern</strong> | Pampanga State Agricultural University<br>
+    <small>Jan 2025 – Present</small></p>
     <ul>
         <li>Provided first-level technical support and hardware troubleshooting.</li>
         <li>Installed and configured operating systems and essential applications.</li>
@@ -81,8 +125,8 @@
         </tbody>
     </table>
 
-    <h4>Certification</h4>
-    <p>I HEREBY CERTIFY that the information provided above is true and correct to the best of my knowledge.</p>
+    <p class="certify">I HEREBY CERTIFY that the information provided above is true and correct to the best of my knowledge.</p>
+</div>
 
 </body>
 </html>
